@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-    <a href="https://arxiv.org/pdf/2512.09373" target="_blank">
+    <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Jiang_FUSER_Feed-Forward_Multiview_3D_Registration_Transformer_and_SE3N_Diffusion_Refinement_CVPR_2026_paper.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Paper-00AEEF?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
     </a>
     <a href="https://jiang-hb.github.io/fuser.github.io/" target="_blank">
