@@ -20,8 +20,8 @@
     <a href="https://arxiv.org/pdf/2512.09373" target="_blank">
     <img src="https://img.shields.io/badge/Paper-00AEEF?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
     </a>
-    <a href="https://github.com/Jiang-HB/FUSER" target="_blank">
-    <img src="https://img.shields.io/badge/Project%20Page (Preparing)-F78100?style=flat-square&logo=google-chrome&logoColor=white" alt="Project Page">
+    <a href="https://jiang-hb.github.io/fuser.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Project%20Page -F78100?style=flat-square&logo=google-chrome&logoColor=white" alt="Project Page">
     </a>
     <a href="https://github.com/Jiang-HB/FUSER" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo (Preparing)-0A66C2?style=flat-square&logoColor=white" alt="Hugging Face Demo">
