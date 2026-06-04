@@ -58,7 +58,7 @@ Built on top of FUSER, **FUSER-DF** further introduces an **SE(3)<sup>N</sup> di
 
 <div align="center">
     <a href="[PROJECT_PAGE_LINK_HERE]">
-        <img src="assets/teaser.jpg" width="100%">
+        <img src="assets/teaser.gif" width="100%">
     </a>
 </div>
 
