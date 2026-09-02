@@ -85,11 +85,42 @@ Built on top of FUSER, **FUSER-DF** further introduces an **SE(3)<sup>N</sup> di
 
 ### 1. Clone & Install Dependencies
 
-First, please clone the repository to the local machine and install the required dependencies.
+First, please clone the repository and set up the environment. We recommend Python 3.10 or 3.11.
+
 ```bash
 git clone https://github.com/Jiang-HB/FUSER.git
 cd FUSER
+```
+
+Install **torch first**, choosing the build that matches your CUDA toolkit / GPU:
+
+```bash
+# Conventional NVIDIA GPUs (CUDA 12.4, e.g. L20 / A100 / RTX 40-series)
+pip install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+
+# NVIDIA RTX 50-series / Blackwell (sm_120) requires torch>=2.7 with CUDA 12.8
+# pip install torch==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+```
+
+Then install the remaining dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+**MinkowskiEngine (CUDA 12.x toolchains):** the released 0.5.4 does not
+compile on CUDA 12.x out of the box. See
+[NVIDIA/MinkowskiEngine#638](https://github.com/NVIDIA/MinkowskiEngine/issues/638)
+for the required compatibility fix, then build it against the torch you just
+installed:
+
+```bash
+git clone https://github.com/NVIDIA/MinkowskiEngine.git
+cd MinkowskiEngine
+# apply the compatibility fix described in NVIDIA/MinkowskiEngine#638
+export CC=g++-12 CXX=g++-12 CUDAHOSTCXX=g++-12   # use a GCC version supported by your CUDA toolkit
+pip install --no-build-isolation .
+cd ..
 ```
 
 ### 2. Run Inference from Command Line
